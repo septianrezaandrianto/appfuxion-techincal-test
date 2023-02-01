@@ -29,11 +29,11 @@
    - This API I provide for fetching data from github API and then save the data (include PDF) in the database.
    
 2. Get All Data (localhost:8080/api/getAllData)
-  - This API I provide for fetching data from the database(you can use the ID for download the pdf file from database).
+   - This API I provide for fetching data from the database(you can use the ID for download the pdf file from database).
 
 3. Download Pdf (localhost:8080/api/downloadPdf?id=12)
-  - This API I provide for download Pdf file from database, use ID from the collection GET All Data as the parameter.
+   - This API I provide for download Pdf file from database, use ID from the collection GET All Data as the parameter.
   
 4. Delete By Id (localhost:8080/api/doDeleteData?id=1)
-  - This API I provide for delete data from the database.
+   - This API I provide for delete data from the database.
   
