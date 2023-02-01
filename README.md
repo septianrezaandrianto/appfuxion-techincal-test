@@ -35,5 +35,5 @@
    - This API I provide for download Pdf file from database, use ID from the collection GET All Data as the parameter.
   
 4. Delete By Id (localhost:8080/api/doDeleteData?id=1)
-   - This API I provide for delete data from the database.
+   - This API I provide for delete data from the database, use ID from the collection GET All Data as the parameter.
   
