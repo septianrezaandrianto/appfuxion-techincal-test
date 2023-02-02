@@ -13,7 +13,9 @@
 5. H2 Database,
 6. Webflux / Webclient,
 7. iTextPdf,
-8. MySQL Driver.
+8. MySQL Driver,
+9. Gson,
+10. JUnit 5.
 
 ## Rules :
 1. Before you run this project, you must import database from database folder in this project
@@ -21,7 +23,9 @@
 
 2. Import the postman collection from postman-collection folder in this project to your postman.
 
-3. If you want to run this project using CMD / Terminal write this script mvn spring-boot:run on your cmd or terminal.
+3. mvn spring-boot:run : Use this script for running this project using CMD / Terminal.
+
+4. mvn clean test : Use this script for running unit testing this project using CMD / Terminal.
 
 
 ## I provide some services:
