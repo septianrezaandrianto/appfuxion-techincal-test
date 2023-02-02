@@ -75,7 +75,6 @@ public class GithubSearchService {
             throws DocumentException, IOException {
 
         Document document = new Document(PageSize.A4.rotate());
-//        PdfWriter.getInstance(document, httpServletResponse.getOutputStream());
 
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         PdfWriter.getInstance(document, baos);
@@ -104,9 +103,6 @@ public class GithubSearchService {
         byte[] pdfAsBytes = baos.toByteArray();
 
         String fileName = "GithubDatas "  + DATE_FORMAT_REPORT.format(new Date()) + ".pdf";
-//        httpServletResponse.setContentType("application/pdf");
-//        httpServletResponse.setHeader("Content-Disposition",
-//                "attachment; filename=" +fileName);
 
         Map<String, Object> result = new HashMap<>();
         result.put("fileName", fileName);
@@ -119,10 +115,13 @@ public class GithubSearchService {
 
         cell.setBackgroundColor(CMYKColor.LIGHT_GRAY);
         cell.setPadding(5);
+        cell.setHorizontalAlignment(Element.ALIGN_CENTER);
+        cell.setVerticalAlignment(Element.ALIGN_CENTER);
 
         Font font = FontFactory.getFont(FontFactory.TIMES_ROMAN);
         font.setColor(CMYKColor.WHITE);
-        font.setSize(10);
+        font.setSize(12);
+        font.setStyle(Font.BOLD);
 
         cell.setPhrase(new Phrase("No", font));
         table.addCell(cell);
@@ -166,7 +165,6 @@ public class GithubSearchService {
     }
 
     public DownloadHistory downloadPdf(String id) throws IOException {
-
         if (!numberValidation(id)) {
             throw CustomException.builder()
                     .responseCode(HttpStatus.BAD_REQUEST.value())

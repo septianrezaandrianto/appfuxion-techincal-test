@@ -2,11 +2,9 @@ package com.techincal.test.appfuxion.validator;
 
 import com.techincal.test.appfuxion.exception.CustomException;
 import org.springframework.http.HttpStatus;
-import org.springframework.util.ObjectUtils;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
-import java.util.Objects;
 import java.util.regex.Pattern;
 
 public class RowPerPageValidator implements ConstraintValidator<RowPerPageValidation, String> {

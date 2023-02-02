@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.techincal.test.appfuxion.controller.GithubSearchControllerTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.712 s - in com.techincal.test.appfuxion.controller.GithubSearchControllerTest

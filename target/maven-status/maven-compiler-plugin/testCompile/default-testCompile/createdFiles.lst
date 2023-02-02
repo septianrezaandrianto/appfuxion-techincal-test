@@ -1,1 +1,5 @@
+com/techincal/test/appfuxion/controller/GithubSearchControllerTest.class
 com/techincal/test/appfuxion/AppfuxionApplicationTests.class
+com/techincal/test/appfuxion/rest/GithubSearchRestTest.class
+com/techincal/test/appfuxion/service/GithubSearchServiceTest$1.class
+com/techincal/test/appfuxion/service/GithubSearchServiceTest.class

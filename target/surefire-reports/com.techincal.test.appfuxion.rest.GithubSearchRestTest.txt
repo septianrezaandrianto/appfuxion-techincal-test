@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.techincal.test.appfuxion.rest.GithubSearchRestTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.329 s - in com.techincal.test.appfuxion.rest.GithubSearchRestTest

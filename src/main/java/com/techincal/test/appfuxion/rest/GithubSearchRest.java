@@ -6,6 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
@@ -19,9 +20,11 @@ public class GithubSearchRest {
     private String githubSearchUrl;
     @Autowired
     private WebClient webClient;
+    @Autowired
+    private Environment env;
 
     public Mono<GithubSearchResponse> doSearchGithubRest(GithubSearchRequest githubSearchRequest) {
-        String completeUrl = githubSearchUrl.replace("{q}", githubSearchRequest.getQ())
+        String completeUrl = env.getProperty("github.search.url").replace("{q}", githubSearchRequest.getQ())
                 .replace("{perPage}", String.valueOf(githubSearchRequest.getPer_page()));
 
         logger.info("URL " + completeUrl);

@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 public class GithubSearchDetailResponse {
 
     private Integer id;
-    private String q;
+    private String login;
     private String node_id;
     private String avatar_url;
     private String gravatar_id;
